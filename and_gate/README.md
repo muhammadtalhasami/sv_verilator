@@ -1,4 +1,5 @@
 ## INTRODUCTION
+
 This repo is basically an implementation of and gate on system verilog and we use verilator tool to create its test bench
 
 There are 2 testbench
@@ -21,7 +22,9 @@ a b o
 
 ## COMPILATION STEPS
 
-For simple and_gate_tb.cpp
+# For simple and_gate_tb.cpp
+![Screenshot from 2024-03-24 04-21-06](https://github.com/muhammadtalhasami/sv_verilator/assets/141629485/b93c83bb-d087-46ee-a2c1-e63c580cc7f7)
+
 ```
 1- verilated -Wall -trace and_gate.sv -exe and_gate_tb.cpp
 
@@ -32,7 +35,8 @@ For simple and_gate_tb.cpp
 4- gtkwave waveform.vcd
 ```
 
-while loop andw_gate_tb.cpp
+# while loop andw_gate_tb.cpp
+![Screenshot from 2024-03-24 04-22-41](https://github.com/muhammadtalhasami/sv_verilator/assets/141629485/5d252dcf-234b-4b77-8e26-4ed88c95bdff)
 
 Just replace the and_gate_tb.cpp with andw_gate_tb.cpp in the first line rest of the flow is same
 ```
