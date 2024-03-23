@@ -19,5 +19,12 @@ for Modelsim, Questa Sim, Synopsys VCS, Vivado Xsim, and other event-based simul
 evaluate time within a single clock cycle, and does not simulate exact circuit timing. Instead, the circuit state is typically evaluated once per clock-cycle, 
 so any intra-period glitches cannot be observed, and timed signal delays are not supported. This has both benefits and drawbacks when comparing Verilator to other simulators.
 
+# INSTALLATION PROCESS
 
+```
+sudo apt update
 
+sudo apt install verilator
+
+verilator --version
+```
