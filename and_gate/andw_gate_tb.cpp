@@ -9,7 +9,7 @@
 #include <verilated_vcd_c.h>
 #include "Vand_gate.h"
 
-//#define max_time is used to assigned the maximum simukation time to the variable Max_time
+//#define max_time is used to assigned the maximum simulation time to the variable Max_time
 //We use the sim_time variable to track when to finish the simulation.
 #define Max_time 20
 vluint64_t sim_time = 0;
@@ -21,7 +21,7 @@ int main(int argc, char** argv, char** env){
 // The line Vand_gate *dut = new Vand_gate; instantiates our converted and_gate module. 
 // The next four lines set up the waveform dumping. Notably, we create an m_trace obje down the device under test.
     Vand_gate *dut = new Vand_gate;
-
+//Verilated::traceEverOn(true) in C++ code is likely related to the Verilator tool, which is used to convert SystemVerilog code into C++ for simulation.
     Verilated::traceEverOn(true);
     VerilatedVcdC *m_trace = new VerilatedVcdC;
     dut->trace(m_trace,0);
@@ -57,10 +57,13 @@ int main(int argc, char** argv, char** env){
         m_trace->dump(sim_time);
         sim_time++;    
     }
-// these lines of code perform necessary cleanup tasks at the end of the simulation, including closing the VCD trace file,                                 
+// These lines of code perform necessary cleanup tasks at the end of the simulation, including closing the VCD trace file,                                 
 // deleting the Verilated model instance, and exiting the simulation process.    
     m_trace->close();
     delete dut;
     exit(EXIT_SUCCESS);
 
 }
+//Dynamic object c++ support two operators new and delete to perform memory allocation and de-allocation 
+//These types of objects are called dynamic objects new VerilatedVcdC dynamic object creation
+//Delete object dynamically 
