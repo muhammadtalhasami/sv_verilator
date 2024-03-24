@@ -22,6 +22,11 @@ a b o
 
 ## COMPILATION STEPS
 
+# Only System verilog file
+```
+verilator --cc -sv and_gate.sv
+```
+# System Verilog File with Test bench 
 # For simple and_gate_tb.cpp
 ![Screenshot from 2024-03-24 04-21-06](https://github.com/muhammadtalhasami/sv_verilator/assets/141629485/b93c83bb-d087-46ee-a2c1-e63c580cc7f7)
 
