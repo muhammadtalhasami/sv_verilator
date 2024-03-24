@@ -65,5 +65,6 @@ int main(int argc, char** argv, char** env){
 
 }
 //Dynamic object c++ support two operators new and delete to perform memory allocation and de-allocation 
-//These types of objects are called dynamic objects new VerilatedVcdC dynamic object creation
-//Delete object dynamically 
+//These types of objects are called dynamic objects 
+// new VerilatedVcdC dynamic object creation
+//delete dut Delete object dynamically 
