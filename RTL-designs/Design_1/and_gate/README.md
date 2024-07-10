@@ -31,7 +31,7 @@ verilator --cc -sv and_gate.sv
 ![Screenshot from 2024-03-24 04-21-06](https://github.com/muhammadtalhasami/sv_verilator/assets/141629485/b93c83bb-d087-46ee-a2c1-e63c580cc7f7)
 
 ```
-1- verilator -Wall --trace and_gate.sv --exe and_gate_tb.cpp
+1- verilator -Wall --trace -cc and_gate.sv --exe and_gate_tb.cpp
 
 2- make -C obj_dir -f Vand_gate.mk Vand_gate
 
@@ -45,7 +45,7 @@ verilator --cc -sv and_gate.sv
 
 Just replace the and_gate_tb.cpp with andw_gate_tb.cpp in the first line rest of the flow is same
 ```
-1- verilator -Wall --trace and_gate.sv --exe andw_gate_tb.cpp
+1- verilator -Wall --trace -cc and_gate.sv --exe andw_gate_tb.cpp
 
 2- make -C obj_dir -f Vand_gate.mk Vand_gate
 
